@@ -1,0 +1,55 @@
+main{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 60px 140px 500px 200px 200px 80px;
+    grid-auto-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: 
+    "ganav ganav ganav ganav"
+    "gaheader gaheader gaheader gaheader"
+    "gaoferta1 gaoferta2 gaoferta2 gaoferta3"
+    "gazdjecie gazdjecie gazdjecie gazdjecie"
+    "gauslugi1 gauslugi1 gauslugi2 gauslugi2"
+    "gastopka gastopka gastopka gastopka"
+}
+nav {
+    background: red;
+    grid-area: ganav;
+}
+header {
+    background: blue;
+    grid-area: gaheader;
+}
+#oferta1 {
+    background: lightcyan;
+    grid-area: gaoferta1;
+}
+#oferta2 {
+    background: lightcoral;
+    grid-area: gaoferta2;
+}
+#oferta3 {
+    background: lightpink;
+    grid-area: gaoferta3;
+}
+#zdjecie {
+    background: lightblue;
+    grid-area: gazdjecie;
+}
+#uslugi1 {
+    background: lightsalmon;
+    grid-area: gauslugi1;
+}
+#uslugi2 {
+    background: greenyellow;
+    grid-area: gauslugi2;
+}
+footer {
+    background: pink;
+    grid-area: gastopka;
+}
+@media (max-width: 500px) {
+main {
+    width: 100%
+}
+}

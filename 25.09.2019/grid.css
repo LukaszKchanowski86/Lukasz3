@@ -10,7 +10,7 @@ main {
     grid-template-areas: 
     "header header header"
     "aside article right"
-    "footer footer footer";
+    "footer footer footer"
 }
 header{
     background: lightblue;
